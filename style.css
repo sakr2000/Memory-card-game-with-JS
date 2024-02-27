@@ -65,12 +65,8 @@ body {
   font-size: 20px;
 }
 
-.info-container .name {
-  margin-left: 10px;
-}
-
 .info-container .name span {
-  font-size: 25px;
+  font-size: 1.5em;
   font-weight: bold;
 }
 
@@ -79,7 +75,7 @@ body {
 }
 
 .info-container .time span {
-  font-size: 25px;
+  font-size: 1.5em;
   font-weight: bold;
 }
 
@@ -151,34 +147,6 @@ body {
   object-position: center;
 }
 
-@media screen and (max-width: 768px) {
-  .block {
-    width: 120px;
-    height: 120px;
-  }
-  .block .front::before {
-    font-size: 100px;
-  }
-  .block .back img {
-    width: 80px;
-    height: 80px;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .block {
-    width: 100px;
-    height: 100px;
-  }
-  .block .front::before {
-    font-size: 80px;
-  }
-  .block .back img {
-    width: 60px;
-    height: 60px;
-  }
-}
-
 .popup {
   position: fixed;
   top: 0;
@@ -245,8 +213,47 @@ body {
 }
 
 @media screen and (max-width: 480px) {
+  .start h1 {
+    font-size: 60px;
+    text-align: center;
+  }
+  .info-container {
+    width: 300px;
+    height: auto;
+    align-items: start;
+    flex-direction: column;
+    font-size: 15px;
+    gap: 5px;
+  }
+  .block-grid {
+    width: 95%;
+    height: 95%;
+    grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
+  }
+
+  .block {
+    width: 60px;
+    height: 60px;
+  }
+  .block .front {
+    line-height: 60px;
+  }
+  .block .front::before {
+    font-size: 40px;
+  }
+
+  .block .back img {
+    width: 40px;
+    height: 40px;
+    margin-top: 10px;
+  }
+
+  .popup {
+    font-size: 30px;
+  }
+
   .popup .popup-content img {
     width: 200px;
-    height: 100px;
+    height: 150px;
   }
 }
