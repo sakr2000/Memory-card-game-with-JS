@@ -95,7 +95,9 @@ body {
   background-color: #fff;
   justify-items: center;
 }
-
+.block-grid.stopClicking {
+  pointer-events: none;
+}
 .block {
   width: 160px;
   height: 160px;
@@ -147,4 +149,32 @@ body {
   border-radius: 5px;
   object-fit: fill;
   object-position: center;
+}
+
+@media screen and (max-width: 768px) {
+  .block {
+    width: 120px;
+    height: 120px;
+  }
+  .block .front::before {
+    font-size: 100px;
+  }
+  .block .back img {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .block {
+    width: 100px;
+    height: 100px;
+  }
+  .block .front::before {
+    font-size: 80px;
+  }
+  .block .back img {
+    width: 60px;
+    height: 60px;
+  }
 }
