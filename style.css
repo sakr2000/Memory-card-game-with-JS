@@ -256,4 +256,8 @@ body {
     width: 200px;
     height: 150px;
   }
+
+  .popup .popup-content h2 {
+    font-size: 25px;
+  }
 }
