@@ -17,7 +17,7 @@
     <!-- info container -->
     <div class="info-container">
       <div class="name">Player : <span>name</span></div>
-      <div class="time">Time : <span>0</span></div>
+      <div class="time">Time : <span>00:00</span></div>
     </div>
 
     <!-- game cards -->
@@ -141,6 +141,18 @@
       </div>
     </div>
 
+    <!-- success and fail popup -->
+    <div class="popup">
+      <div class="popup-inner">
+        <div class="popup-content">
+          <h2 class="popup-title">Congratulations!</h2>
+          <img src="assets/images/sucess.jpg" alt="" class="popup-img" />
+          <button>Play Again</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- sounds -->
     <audio
       src="assets/sounds/success.mp3"
       id="successSound"
@@ -149,6 +161,16 @@
     <audio
       src="assets/sounds/incorrect.mp3"
       id="failSound"
+      preload="auto"
+    ></audio>
+    <audio
+      src="assets/sounds/crowdflac.mp3"
+      id="winSound"
+      preload="auto"
+    ></audio>
+    <audio
+      src="assets/sounds/brass-fail.mp3"
+      id="loseSound"
       preload="auto"
     ></audio>
   </body>
